@@ -1,5 +1,5 @@
 {
-	"name": "client MERN CRUD",
+	"name": "crud01_mern",
 	"author": "Henok R. Bedassa",
 	"web": "henok.us",
 	"email": "jackbalageru@yahoo.com",
@@ -7,6 +7,7 @@
 	"private": true,
 	"homepage": ".",
 	"main": "index.js",
+	"proxy": "http://localhost:8080/api/cruds",
 	"dependencies": {
 		"@nkalpak/react-ios-pwa-prompt": "^1.8.7",
 		"@testing-library/jest-dom": "^5.16.2",

@@ -35,7 +35,8 @@ const crud_details = (req, res) => {
 
 // Update CRUD Detail by Id
 const crud_update = (req, res) => {
-	Crud.findByIdAndUpdate(req.params.id, req.body)
+	console.log('--->>>' , req.body)
+	Crud.findByIdAndUpdate(req.params.id, req.body , {new : true})
 		.then(function () {
 			res.json("Crud updated");
 		})
