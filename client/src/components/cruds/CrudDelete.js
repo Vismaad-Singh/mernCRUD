@@ -5,7 +5,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 function CrudDelete(props) {
 	const [crud, setCrud] = useState({});
 
-	const { _id } = useParams();
+	const {_id} = useParams();
 	const navigate = useNavigate();
 
 	useEffect(
@@ -26,7 +26,7 @@ function CrudDelete(props) {
 
 	async function handleDelete() {
 		try {
-			await axios.delete(`http://localhost:8080/api/cruds/${_id}`);
+			await axios.delete(`http://localhost:8080/api/cruds/:${_id}`);
 			navigate("/cruds");
 		} catch (error) {
 			console.error(error);
