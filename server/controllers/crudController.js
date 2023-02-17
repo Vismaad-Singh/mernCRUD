@@ -3,6 +3,7 @@ const Crud = require("../models/crudModel");
 // Display All CRUD Data
 const crud_index = (req, res) => {
 	Crud.find(function (err, cruds) {
+		console.log("found",cruds)
 		res.json(cruds);
 	});
 };
@@ -13,6 +14,7 @@ const crud_create_post = (req, res) => {
 	crud
 		.save()
 		.then((crud) => {
+			console.log("found1",crud)
 			res.send(crud);
 		})
 		.catch(function (err) {
