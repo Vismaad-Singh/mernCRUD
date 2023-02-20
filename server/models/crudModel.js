@@ -9,8 +9,7 @@ const crudSchema = new mongoose.Schema({
 	phone: {
 		type: String,
 		required: [true, "User phone number required"],
-		min: [12, "Too Few. Not valid number. Eg. 251-XXX-XXXXXX"],
-		max: [12, "Too long. Not valid number. Eg. 251-XXX-XXXXXX"],
+
 	},
 	email: {
 		type: String,

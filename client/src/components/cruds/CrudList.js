@@ -28,7 +28,7 @@ function CrudList() {
 				</p>
 			</h2>
 			<hr />
-			{cruds.map((crud) => {
+			{cruds && cruds.map((crud) => {
 				return (
 					<div key={crud._id}>
 						<h4>

@@ -5,8 +5,8 @@ const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container">
-				<NavLink className="navbar-brand" hrefLang="https://henok.us" to="/">
-					Henok
+				<NavLink className="navbar-brand" to="/">
+					HOME
 				</NavLink>
 				<button
 					className="navbar-toggler collapsed"

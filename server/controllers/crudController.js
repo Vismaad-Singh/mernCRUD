@@ -47,6 +47,7 @@ const crud_update = (req, res) => {
 
 // Delete CRUD Detail by Id
 const crud_delete = (req, res) => {
+	console.log("inside delete---------->")
 	Crud.findById(req.params.id, function (err, crud) {
 		if (!crud) {
 			res.status(404).send("Crud not found");

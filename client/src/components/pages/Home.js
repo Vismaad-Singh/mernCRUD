@@ -1,7 +1,7 @@
 import React from "react";
 
 function Home() {
-	const link = "https://henok.us";
+	const link = "https://github.com/Vismaad-Singh/mernCRUD";
 	const target = "_blank";
 
 	return (
@@ -17,10 +17,10 @@ function Home() {
 				<b>Database</b>: MongoDB Atlas with Mongoose ODM
 			</p>
 			<p>
-				<b>Developed By</b>: Henok R. Bedassa
+				<b>Developed By</b>: Vismaad Singh
 				<p>
 					<a href={link} target={target}>
-						henok.us
+						GITHUB
 					</a>
 				</p>
 			</p>

@@ -28,6 +28,7 @@ function App() {
 					<Route exact path="/cruds/:_id" element={<CrudDetails />} />
 					<Route exact path="/cruds/:_id/edit" element={<CrudEdit />} />
 					<Route exact path="/cruds/:_id/delete" element={<CrudDelete />} />
+					<Route  path="*" element={<Home />} />
 				</Routes>
 				<Footer />
 			</Router>

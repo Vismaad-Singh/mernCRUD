@@ -51,7 +51,7 @@ function CrudEdit(props) {
 	}
 
 	function handleCancel() {
-		navigate(`/cruds/${crud._id}`);
+		navigate(`/cruds`);
 	}
 
 	return (
