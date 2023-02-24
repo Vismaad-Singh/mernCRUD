@@ -9,7 +9,7 @@ const crudSchema = new mongoose.Schema({
 	phone: {
 		type: String,
 		required: [true, "User phone number required"],
-
+		
 	},
 	email: {
 		type: String,

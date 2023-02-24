@@ -1,3 +1,9 @@
+/* .container{
+	margin-left: 0;
+	margin-right: 0;
+	margin: 10px 100px;
+} */
+
 .card-title {
 	text-align: left;
 	font-size: 16px;
@@ -5,9 +11,9 @@
 	text-decoration: none;
 	overflow: hidden;
 	display: -webkit-box;
-	line-height: 16px; /* fallback */
-	max-height: 32px; /* fallback */
-	-webkit-line-clamp: 1; /* number of lines to show */
+	line-height: 16px;
+	max-height: 32px; 
+	-webkit-line-clamp: 1; 
 	-webkit-box-orient: vertical;
 }
 .card-subtitle {
@@ -17,7 +23,7 @@
 	text-decoration: none;
 	overflow: hidden;
 	display: -webkit-box;
-	-webkit-line-clamp: 1; /* number of lines to show */
+	-webkit-line-clamp: 1; 
 	-webkit-box-orient: vertical;
 }
 
@@ -30,7 +36,7 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 3; /* number of lines to show */
+	-webkit-line-clamp: 3; 
 	-webkit-box-orient: vertical;
 }
 
@@ -39,7 +45,7 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 1; /* number of lines to show */
+	-webkit-line-clamp: 1; 
 	-webkit-box-orient: vertical;
 }
 @keyframes App-logo-spin {
@@ -50,9 +56,7 @@
 		transform: rotate(360deg);
 	}
 }
-/* ======= Navbar Toggler ====== */
 
-/* Remove border from toggler */
 .navbar-toggler {
 	border: 0 !important;
 }
@@ -65,7 +69,7 @@
 	border: 0 !important;
 }
 
-/* Lines of the Toggler */
+
 .toggler-icon {
 	width: 30px;
 	height: 3px;
@@ -74,12 +78,12 @@
 	transition: all 0.2s;
 }
 
-/* Adds Space between the lines */
+
 .middle-bar {
 	margin: 5px auto;
 }
 
-/* State when navbar is opened (START) */
+
 .navbar-toggler .top-bar {
 	transform: rotate(45deg);
 	transform-origin: 10% 10%;
@@ -94,9 +98,7 @@
 	transform: rotate(-45deg);
 	transform-origin: 10% 90%;
 }
-/* State when navbar is opened (END) */
 
-/* State when navbar is collapsed (START) */
 .navbar-toggler.collapsed .top-bar {
 	transform: rotate(0);
 }
@@ -109,10 +111,10 @@
 .navbar-toggler.collapsed .bottom-bar {
 	transform: rotate(0);
 }
-/* State when navbar is collapsed (END) */
 
-/* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
 	background-color: #d2e82d;
 }
-/* ======= Navbar Toggler ====== */
+
+
+

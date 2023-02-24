@@ -29,7 +29,7 @@ function CrudListView() {
 			</h2>
 			<hr />
 
-			{cruds.map((crud) => {
+			{cruds && cruds.map((crud) => {
 				return (
 					<div
 						className="card mb-3"
@@ -38,7 +38,6 @@ function CrudListView() {
 					>
 						<div className="row g-0">
 							<div className="col-md-4 pl-5 ">
-								{/* <img src="..." className="img-fluid rounded-start" alt="..."> */}
 								<h5>Logo</h5>
 							</div>
 							<div className="col-md-8">
@@ -70,7 +69,7 @@ function CrudListView() {
 									<div class="card-footer">
 										<Link
 											to={`/cruds/${crud._id}/edit`}
-											className="btn btn-primary"
+											className="btn btn-primary me-2"
 										>
 											Edit
 										</Link>

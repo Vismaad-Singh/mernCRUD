@@ -20,7 +20,7 @@ function CrudDetails(props) {
 			}
 			getCrudById();
 		},
-		// eslint-disable-next-line react-hooks/exhaustive-deps
+		
 		[props]
 	);
 

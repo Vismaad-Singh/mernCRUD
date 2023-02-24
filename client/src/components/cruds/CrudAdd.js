@@ -17,7 +17,6 @@ function CrudAdd(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    //if (!crud.companyName || !crud.email) return;
     async function postCrud() {
       try {
         const response = await post("http://localhost:8080/api/cruds", crud);
@@ -43,7 +42,7 @@ function CrudAdd(props) {
       <hr />
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Company Name</label>
+          <label style={{fontWeight:"bold"}}>Company Name*</label>
           <input
             name="companyName"
             type="text"
@@ -53,8 +52,11 @@ function CrudAdd(props) {
             className="form-control"
           />
         </div>
+        {/* <small style={{fontSize: "10px",fontStyle:"italic",color:"grey"}}>Please provide your Name</small> */}
+        <br/>
+
         <div className="form-group">
-          <label>Phone</label>
+          <label style={{fontWeight:"bold"}}>Phone*</label>
           <input
             name="phone"
             type="text"
@@ -70,8 +72,10 @@ function CrudAdd(props) {
             className="form-control"
           />
         </div>
+        <small style={{fontSize: "10px",fontStyle:"italic",color:"grey"}}>NOTE: Number cannot exceed 10 digits</small>
+        <br/>
         <div className="form-group">
-          <label>Email</label>
+          <label style={{fontWeight:"bold"}}>Email*</label>
           <input
             name="email"
             type="email"
@@ -82,19 +86,21 @@ function CrudAdd(props) {
             className="form-control"
           />
         </div>
+        <small style={{fontSize: "10px",fontStyle:"italic",color:"grey"}}>Format: abc@gmail.com</small>
+        <br/>
         <div className="form-group">
-          <label>Location</label>
+          <label style={{fontWeight:"bold"}}>Location*</label>
           <input
             name="location"
             type="text"
-            required
+            
             value={crud.location}
             onChange={handleChange}
             className="form-control"
           />
-        </div>
+        </div><br/>
         <div className="form-group">
-          <label>Website/Social Link</label>
+          <label style={{fontWeight:"bold"}}>Website/Social Link*</label>
           <input
             name="link"
             type="url"
@@ -102,19 +108,21 @@ function CrudAdd(props) {
             onChange={handleChange}
             className="form-control"
           />
-          <small>Format: https://yourlink.ext</small>
+          <small style={{fontSize: "10px",fontStyle:"italic",color:"grey"}}>Format: https://yourlink.ext</small><br/>
         </div>
 
         <div className="form-group">
-          <label>Description</label>
+          <label style={{fontWeight:"bold"}}>Description*</label>
           <textarea
             name="description"
             row="10"
+			required
             value={crud.description}
             onChange={handleChange}
             className="form-control"
           />
         </div>
+        <small style={{fontSize: "10px",fontStyle:"italic",color:"grey"}}>Describe about the website</small><br/><br/>
 
         <div className="btn-group">
           <input type="submit" value="Submit" className="btn btn-primary" />

@@ -63,12 +63,12 @@ function CrudTable() {
 										</Link>
 									</td>
 									<td>
-										<Link
-											to={`/cruds/${crud._id}/edit`}
-											className="btn btn-success"
-										>
-											Edit
-										</Link>
+									<Link
+										to={`/cruds/${crud._id}/edit`}
+										className="btn btn-primary"
+									>
+										Edit
+									</Link>
 									</td>
 									<td>
 										<Link

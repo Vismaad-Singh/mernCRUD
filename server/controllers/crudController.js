@@ -14,7 +14,7 @@ const crud_create_post = (req, res) => {
 	crud
 		.save()
 		.then((crud) => {
-			console.log("found1",crud)
+			// console.log("found1",crud)
 			res.send(crud);
 		})
 		.catch(function (err) {

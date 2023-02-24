@@ -51,9 +51,7 @@ function CrudGridView() {
 											{crud.phone}
 										</a>
 									</h5>
-									{/* <h6 className="card-subtitle mb-2 text-muted">
-										{crud.phone}
-									</h6> */}
+								
 									<p className="card-text limit-char">{crud.description}</p>
 									<p className="card-text d-flex align-items-center">
 										<i className="bi bi-geo-alt-fill text-warning"></i>
@@ -64,8 +62,8 @@ function CrudGridView() {
 								</div>
 								<div class="card-footer d-flex align-items-center">
 									<Link
-										to={`/cruds/${cruds._id}/edit`}
-										className="btn btn-primary"
+										to={`/cruds/${crud._id}/edit`}
+										className="btn btn-primary me-2"
 									>
 										Edit
 									</Link>
